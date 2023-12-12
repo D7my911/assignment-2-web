@@ -39,13 +39,14 @@ $(document).ready(function () {
     input_text.val("");
   });
 
-  // Additional events
+  // Submit on enter
   input_text.keyup(function (event) {
     if (event.keyCode === 13) {
       button_submit.click();
     }
   });
 
+  // Clear on double click
   input_text.dblclick(function () {
     input_text.val("");
   });
